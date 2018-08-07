@@ -1,11 +1,14 @@
 package com.BankController;
 
 public class MMCurrentAcc extends CurrentAcc{
+
+	//Parameterized Constructor
 	public MMCurrentAcc(int accNo, String accNm, float accBal,float creditLimit)
 	{
 		super(accNo,accNm,accBal,creditLimit);
 	}
 	
+	//logic to withdraw money for current account
 	@Override
 	public void withdraw(float money)
 	{
@@ -25,6 +28,7 @@ public class MMCurrentAcc extends CurrentAcc{
 
 	
 
+	//Overriden toString method
 	@Override
 	public String toString() {
 		return "MMCurrentAcc [toString()=" + super.toString() + "]";
