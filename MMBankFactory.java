@@ -1,6 +1,7 @@
 package com.BankController;
 public class MMBankFactory extends BankFactory{
 
+	//functions to create objects of MM Saving Account and MM Current Account 
 	@Override
 	public MMSavingAcc getNewSavingAcc(int accNo, String accNm, float accBal,boolean isSalaried)
 	{
